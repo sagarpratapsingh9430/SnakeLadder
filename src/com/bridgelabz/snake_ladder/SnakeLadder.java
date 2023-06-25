@@ -21,11 +21,12 @@ public class SnakeLadder {
 
     public static void main(String[] args) {
 
-
         System.out.println("Player1 at starting position: " + player1Position);
 
+        int diceCount = 0;
         while (player1Position < WIN_POSITION ) {
             int dieValue = dieRoll();
+            diceCount++;
             System.out.println("Die:" + dieValue);
             int option = getOption();
             System.out.println("Option:" + option);
@@ -53,7 +54,6 @@ public class SnakeLadder {
                 System.out.println("Player 1 won the game!!");
 
         }
-
-
+        System.out.println("Dice Count :"+diceCount);
     }
 }
