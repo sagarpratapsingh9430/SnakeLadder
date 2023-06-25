@@ -21,8 +21,8 @@ public class SnakeLadder {
 
     public static void main(String[] args) {
 
-        System.out.println("Player1 at starting position: " + player1Position);
 
+        System.out.println("Player1 at starting position: " + player1Position);
 
         while (player1Position < WIN_POSITION ) {
             int dieValue = dieRoll();
@@ -49,7 +49,11 @@ public class SnakeLadder {
             }
 
             System.out.println("Position Player 1: " + player1Position);
+            if(player1Position == WIN_POSITION)
+                System.out.println("Player 1 won the game!!");
 
         }
+
+
     }
 }
